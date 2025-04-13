@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Fitness Merkezi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar (diğer sayfalarla aynı) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Fitness Merkezi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İletişim Formu ve Bilgiler -->
+    <section class="contact-section py-5">
+        <div class="container my-5 pt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Bize Ulaşın</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon Numaranız</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h2>İletişim Bilgileri</h2>
+                    <p><strong>Adres:</strong><br>
+                    Fitness Sokak No:123<br>
+                    Merkez Mahallesi<br>
+                    34000 İstanbul</p>
+                    
+                    <p><strong>Telefon:</strong><br>
+                    (555) 123-4567</p>
+                    
+                    <p><strong>E-posta:</strong><br>
+                    info@fitnesmerkezi.com</p>
+
+                    <h3 class="mt-4">Çalışma Saatleri</h3>
+                    <p>Hafta içi: 06:00 - 23:00<br>
+                    Hafta sonu: 08:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harita Bölümü -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.7349130699918!2d32.8361578610656!3d39.92494813111402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f190a9cea8f%3A0xd3862ea8248d08a0!2sAn%C4%B1tkabir!5e0!3m2!1str!2str!4v1744483867503!5m2!1str!2str" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (diğer sayfalarla aynı) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Fitness Merkezi</h5>
+                    <p>Sağlıklı yaşam için yanınızdayız.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <h5>İletişim</h5>
+                    <p>Tel: (555) 123-4567<br>
+                    Email: info@fitnesmerkezi.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
